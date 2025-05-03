@@ -6,10 +6,10 @@
 
   </ul>
   {%  for driver in driver_list %}
-    <a href="{% url 'taxi:driver-detail' driver.id %}">
-      <li>
+    <li>
+      <a href="{% url 'taxi:driver-detail' driver.id %}">
         {{ driver.username }} - {{ driver.first_name }} {{ driver.last_name }}
-      </li>
-    </a>
+      </a>
+    </li>
   {% endfor %}
 {% endblock %}
